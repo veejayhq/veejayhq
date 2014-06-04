@@ -5,7 +5,9 @@
 var walk = require('walk'),
     _ = require('lodash'),
     async = require('async'),
+    rmdir = require('rmdir'),
     ellipsize = require('ellipsize'),
+    render = require('./lib/render'),
     Front = require('yaml-front-matter'),
     mkdirp = require('mkdirp'),
     fs = require('fs'),
@@ -44,17 +46,25 @@ var CONTENT_PATH = __dirname + '/content',
  *
  */
 
-function pages(path, collect, done) {
-    var walker = walk.walk(path);
+function mkPaths(source) {
+    // post or page?
+    var isPost = source.match(new RegExp(CONTENT_PATH + '\/post')),
+        relative = source.replace(new RegExp(CONTENT_PATH + '\/(page|post)(\/.+).md'), '$2/');
+
+    return {
+        source: source,
+        path: relative,
+        target: isPost ? Path.join(PUBLIC_DIR, 'category', relative, 'index.html') : Path.join(PUBLIC_DIR, relative, 'index.html')
+    };
+}
+
+function pages(path, done) {
+    var walker = walk.walk(path),
+        collect = [];
 
     walker.on('file', function(root, stats, next) {
         var source = Path.join(root, stats.name),
-            relative = source.replace(new RegExp(CONTENT_PATH + '\/(page|post)(\/.+).md'), '$2/'),
-            page = {
-                source: source,
-                path: relative,
-                target: Path.join(PUBLIC_DIR, relative, 'index.html')
-            };
+            page = mkPaths(source);
 
         collect.push(page);
         next();
@@ -116,16 +126,47 @@ function meta(pages, done) {
     }, done);
 }
 
+function home(pages, done) {
+    var page = _.find(pages.pages, {
+        name: 'home'
+    });
 
-function render(done) {
-    pages(CONTENT_PATH, [], function(err, collect) {
-        meta(collect, function(err, data) {
-            console.log(data.categories.news);
-            done();
+    page.target = Path.join(PUBLIC_DIR, 'index.html');
+    pages.pages = _.reject(pages.pages, {
+        name: 'home'
+    });
+    pages.home = page;
+
+    done(null, pages);
+}
+
+function renderAll(data, done) {
+    var tasks = [].concat(data.home, data.posts, data.pages, _.values(data.categories));
+
+    async.each(tasks, function(post, next) {
+        render(post, data, next);
+    }, done);
+}
+
+function cleanup(done) {
+    rmdir(PUBLIC_DIR, done);
+}
+
+
+function run(done) {
+    cleanup(function(err) {
+        pages(CONTENT_PATH, function(err, collect) {
+            meta(collect, function(err, data) {
+                home(data, function(err, data) {
+                    renderAll(data, function(err) {
+                        done();
+                    });
+                });
+            });
         });
     });
 }
 
-render(function() {
+run(function() {
     process.exit();
 });
