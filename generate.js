@@ -5,6 +5,7 @@
 var walk = require('walk'),
     _ = require('lodash'),
     async = require('async'),
+    copyr = require('cp-r'),
     rmdir = require('rmdir'),
     ellipsize = require('ellipsize'),
     render = require('./lib/render'),
@@ -14,6 +15,7 @@ var walk = require('walk'),
     Path = require('path');
 
 var CONTENT_PATH = __dirname + '/content',
+    ASSET_PATH = __dirname + '/assets',
     PUBLIC_DIR = __dirname + '/public';
 
 /**
@@ -53,7 +55,7 @@ function mkPaths(source) {
 
     return {
         source: source,
-        path: relative,
+        path: isPost ? '/category/' + relative : relative,
         target: isPost ? Path.join(PUBLIC_DIR, 'category', relative, 'index.html') : Path.join(PUBLIC_DIR, relative, 'index.html')
     };
 }
@@ -126,7 +128,7 @@ function meta(pages, done) {
     }, done);
 }
 
-function home(pages, done) {
+function finalize(pages, done) {
     var page = _.find(pages.pages, {
         name: 'home'
     });
@@ -137,7 +139,9 @@ function home(pages, done) {
     });
     pages.home = page;
 
-    done(null, pages);
+    copyr(Path.join(ASSET_PATH), PUBLIC_DIR).read(function() {
+        done(null, pages);
+    });
 }
 
 function renderAll(data, done) {
@@ -152,12 +156,11 @@ function cleanup(done) {
     rmdir(PUBLIC_DIR, done);
 }
 
-
 function run(done) {
     cleanup(function(err) {
         pages(CONTENT_PATH, function(err, collect) {
             meta(collect, function(err, data) {
-                home(data, function(err, data) {
+                finalize(data, function(err, data) {
                     renderAll(data, function(err) {
                         done();
                     });

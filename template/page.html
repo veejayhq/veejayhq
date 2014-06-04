@@ -1,1 +1,7 @@
-{{ page.content|marked }}
+{% extends 'layout/page.html' %}
+
+{% block content %}
+    <div class="blog-post">
+        {{ page.content|marked }}
+    </div><!-- /.blog-post -->
+{% endblock %}

@@ -1,1 +1,12 @@
-{{ page.title }}
+{% extends 'layout/page.html' %}
+
+{% block content %}
+    {% for post in page.posts %}
+    <div class="blog-post">
+        <h2 class="blog-post-title"><a href="{{ post.path }}">{{ post.title }}</a></h2>
+        <p class="blog-post-meta">{{ post.date }}</p>
+        {{ post.content|marked }}
+    </div><!-- /.blog-post -->
+    <hr/>
+    {% endfor %}
+{% endblock %}
