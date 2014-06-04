@@ -6,7 +6,7 @@ var parser = require('xml2json'),
     fs = require('fs');
 
 var DATA_FILE = 'wordpress.2014-06-03.xml',
-    TARGET_DIR = __dirname;
+    TARGET_DIR = __dirname + '/content';
 
 var yaml = require('js-yaml');
 
@@ -63,6 +63,8 @@ function main() {
                 generate(item, next);
                 return;
             }
+
+            console.log( item );
 
             next();
         }, function() {
