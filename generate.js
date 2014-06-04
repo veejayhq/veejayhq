@@ -139,7 +139,7 @@ function finalize(pages, done) {
     });
     pages.home = page;
 
-    copyr(Path.join(ASSET_PATH), PUBLIC_DIR).read(function() {
+    copyr(Path.join(ASSET_PATH), Path.join(PUBLIC_DIR, 'veejayhq')).read(function() {
         done(null, pages);
     });
 }
