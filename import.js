@@ -64,8 +64,6 @@ function main() {
                 return;
             }
 
-            console.log( item );
-
             next();
         }, function() {
             console.log('export done');
