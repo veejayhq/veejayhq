@@ -51,7 +51,7 @@ var CONTENT_PATH = __dirname + '/content',
 function mkPaths(source) {
     // post or page?
     var isPost = source.match(new RegExp(CONTENT_PATH + '\/post')),
-        relative = source.replace(new RegExp(CONTENT_PATH + '\/(page|post)(\/.+).md'), '$2/');
+        relative = source.replace(new RegExp(CONTENT_PATH + '(\/page|post)?(\/.+).md'), '$2/');
 
     return {
         source: source,
