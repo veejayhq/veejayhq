@@ -16,7 +16,7 @@ var walk = require('walk'),
 
 var CONTENT_PATH = __dirname + '/content',
     ASSET_PATH = __dirname + '/assets',
-    PUBLIC_DIR = __dirname + '/public/veejayhq';
+    PUBLIC_DIR = __dirname + '/public';
 
 /**
  * Posts go under their category url
@@ -139,7 +139,7 @@ function finalize(pages, done) {
     });
     pages.home = page;
 
-    copyr(Path.join(ASSET_PATH), Path.join(PUBLIC_DIR)).read(function() {
+    copyr(ASSET_PATH, PUBLIC_DIR).read(function() {
         done(null, pages);
     });
 }
