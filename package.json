@@ -23,7 +23,8 @@
         "strftime": "^0.8.0",
         "cp-r": "^0.1.1",
         "ellipsize": "0.0.1",
-        "swig-marked": "0.0.1"
+        "swig-marked": "0.0.1",
+        "htmltidy": "0.0.6"
     },
     "devDependencies": {
         "jshint": "^2.5.1",
