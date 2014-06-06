@@ -17,7 +17,7 @@ function getData(path, done) {
             reversible: false,
             coerce: true,
             sanitize: false,
-            trim: true,
+            trim: false,
             arrayNotation: false
         };
 
@@ -45,11 +45,21 @@ function generate(item, next) {
 
     if (item['wp:status'] !== 'publish') return next();
 
-    post = new Post(item);
+    Post.generate( item, function( err, post ){
+        if( err ) {
+            // error handling we do here, continue without
+            // breaking the chain.
+            console.error('error parsing post: %s', 1||err );
+            return next();
+        }
 
-    if (!post.content) return next();
+        if (!post.content){
+            console.warn('post with no content ignored: %s', post.title );
+            return next();
+        }
 
-    writeFile(TARGET_DIR, post, next);
+        writeFile(TARGET_DIR, post, next);
+    });
 }
 
 function main() {
