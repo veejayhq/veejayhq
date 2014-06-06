@@ -6,6 +6,9 @@ date: "Wed, 04 Aug 2010 18:37:24 +0000"
 author: niels
 category: uncategorized
 ---
-**veejay 1.5.4 is out now!**[veejay-1.5.4][0]ChangeLog:- fixed data race condition in capture thread (affects all video capture devices)
+**veejay 1.5.4 is out now!**  
 
-[0]: https://sourceforge.net/projects/veejay/files/veejay-1.5-src/veejay-1.5.4.tar.bz2/download
+[veejay-1.5.4](https://sourceforge.net/projects/veejay/files/veejay-1.5-src/veejay-1.5.4.tar.bz2/download)  
+
+ChangeLog:  
+- fixed data race condition in capture thread (affects all video capture devices)

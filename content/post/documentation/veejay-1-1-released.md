@@ -6,4 +6,7 @@ date: "Fri, 30 Nov 2007 22:36:02 +0000"
 author: matthijs
 category: documentation
 ---
-veejay 1.1 is available from the repository, its a bugfix release ofveejay-1.0$ svn checkout svn://dyne.org/veejay/trunk/veejay-1.1
+veejay 1.1 is available from the repository, its a bugfix release of  
+veejay-1.0  
+
+$ svn checkout svn://dyne.org/veejay/trunk/veejay-1.1
