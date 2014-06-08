@@ -4,7 +4,6 @@ name: midi
 type: page
 date: "Mon, 17 Nov 2008 19:25:02 +0000"
 author: niels
-category: uncategorized
 ---
 # Configuring the MIDI device  
 

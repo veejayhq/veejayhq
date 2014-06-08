@@ -4,7 +4,6 @@ name: links
 type: page
 date: "Sat, 14 Apr 2007 10:01:24 +0000"
 author: niels
-category: news
 ---
 **Official veejay sites:**  
 

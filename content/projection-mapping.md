@@ -4,7 +4,6 @@ name: projection-mapping
 type: page
 date: "Sat, 24 Nov 2012 07:29:20 +0000"
 author: xendarboh
-category: uncategorized
 ---
 ## Linux VJ Projection Mapping using Veejay + LPMT  
 The output from Veejay may be used as a real-time projection-mapped surface using a program called Little Projection-Mapping Tool (LPMT). Using more than one projection-mapped Veejay instance should be possible, but is not covered by this document. Video is shared between the two applications using the v4l2loopback kernel module.  

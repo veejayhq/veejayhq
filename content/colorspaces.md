@@ -4,7 +4,6 @@ name: colorspaces
 type: page
 date: "Mon, 17 Nov 2008 21:27:17 +0000"
 author: niels
-category: uncategorized
 ---
 # Colorspaces  
 Veejay processes all video in YUV planar mostly for historical reasons - nowadays, VJ software is shifting to the domain of the GPU and OpenGL . However:  

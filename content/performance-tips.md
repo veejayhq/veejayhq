@@ -4,7 +4,6 @@ name: performance-tips
 type: page
 date: "Mon, 17 Nov 2008 22:07:12 +0000"
 author: niels
-category: uncategorized
 ---
 # Tune veejay  
 

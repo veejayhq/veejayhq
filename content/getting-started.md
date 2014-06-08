@@ -4,7 +4,6 @@ name: getting-started
 type: page
 date: "Mon, 17 Nov 2008 21:38:16 +0000"
 author: niels
-category: uncategorized
 ---
 **  
 First Time Run**  

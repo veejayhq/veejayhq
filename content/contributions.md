@@ -4,7 +4,6 @@ name: contributions
 type: page
 date: "Wed, 25 Feb 2009 18:16:23 +0000"
 author: niels
-category: uncategorized
 ---
 To our contributors: **Thank You!**  
 

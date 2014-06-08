@@ -4,7 +4,6 @@ name: documentation
 type: page
 date: "Sun, 16 Nov 2008 22:52:41 +0000"
 author: niels
-category: uncategorized
 ---
 ## External documentation  
 

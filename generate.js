@@ -49,14 +49,12 @@ var CONTENT_PATH = __dirname + '/content',
  */
 
 function mkPaths(source) {
-    // post or page?
-    var isPost = source.match(new RegExp(CONTENT_PATH + '\/post')),
-        relative = source.replace(new RegExp(CONTENT_PATH + '(\/page|post)?(\/.+).md'), '$2/');
+    var relative = source.replace(new RegExp(CONTENT_PATH + '(\/.+).md'), '$1/');
 
     return {
         source: source,
-        path: isPost ? '/category/' + relative : relative,
-        target: isPost ? Path.join(PUBLIC_DIR, 'category', relative, 'index.html') : Path.join(PUBLIC_DIR, relative, 'index.html')
+        path: relative,
+        target: Path.join(PUBLIC_DIR, relative, 'index.html')
     };
 }
 
@@ -128,7 +126,7 @@ function meta(pages, done) {
     }, done);
 }
 
-function finalize(pages, done) {
+function home(pages, next) {
     var page = _.find(pages.pages, {
         name: 'home'
     });
@@ -139,9 +137,22 @@ function finalize(pages, done) {
     });
     pages.home = page;
 
+    next(null, pages);
+
+}
+
+function assets(pages, next) {
     copyr(ASSET_PATH, PUBLIC_DIR).read(function() {
-        done(null, pages);
+        next(null, pages);
     });
+}
+
+function sort(pages, next) {
+    _.each(pages.categories, function(cat) {
+        cat.posts = _.sortBy(cat.posts, 'date').reverse();
+    });
+
+    next(null, pages);
 }
 
 function renderAll(data, done) {
@@ -158,15 +169,14 @@ function cleanup(done) {
 
 function run(done) {
     cleanup(function(err) {
-        pages(CONTENT_PATH, function(err, collect) {
-            meta(collect, function(err, data) {
-                finalize(data, function(err, data) {
-                    renderAll(data, function(err) {
-                        done();
-                    });
-                });
-            });
-        });
+        async.waterfall([
+            _.partial(pages, CONTENT_PATH),
+            meta,
+            assets,
+            home,
+            sort,
+            renderAll
+        ], done);
     });
 }
 

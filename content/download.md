@@ -4,7 +4,6 @@ name: download
 type: page
 date: "Fri, 01 Aug 2008 00:13:56 +0000"
 author: admin
-category: uncategorized
 ---
 ## GIT  
 

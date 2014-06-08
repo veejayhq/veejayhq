@@ -1,5 +1,8 @@
+'use strict';
+
 var parser = require('xml2json'),
     Path = require('path'),
+    rmdir = require('rmdir'),
     async = require('async'),
     mkdirp = require('mkdirp'),
     Post = require('./lib/import/post'),
@@ -45,16 +48,16 @@ function generate(item, next) {
 
     if (item['wp:status'] !== 'publish') return next();
 
-    Post.generate( item, function( err, post ){
-        if( err ) {
+    Post.generate(item, function(err, post) {
+        if (err) {
             // error handling we do here, continue without
             // breaking the chain.
-            console.error('error parsing post: %s', 1||err );
+            console.error('error parsing post: %s', 1 || err);
             return next();
         }
 
-        if (!post.content){
-            console.warn('post with no content ignored: %s', post.title );
+        if (!post.content) {
+            console.warn('post with no content ignored: %s', post.title);
             return next();
         }
 
@@ -63,23 +66,23 @@ function generate(item, next) {
 }
 
 function main() {
+    rmdir(TARGET_DIR, function() {
+        getData(DATA_FILE, function(err, data) {
 
-    getData(DATA_FILE, function(err, data) {
+            async.each(data.rss.channel.item, function(item, next) {
+                var type = item['wp:post_type'];
 
-        async.each(data.rss.channel.item, function(item, next) {
-            var type = item['wp:post_type'];
+                if (type == 'post' || type == 'page') {
+                    generate(item, next);
+                    return;
+                }
 
-            if (type == 'post' || type == 'page') {
-                generate(item, next);
-                return;
-            }
-
-            next();
-        }, function() {
-            console.log('export done');
+                next();
+            }, function() {
+                console.log('export done');
+            });
         });
     });
-
 }
 
 main();

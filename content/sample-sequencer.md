@@ -4,7 +4,6 @@ name: sample-sequencer
 type: page
 date: "Mon, 17 Nov 2008 20:31:18 +0000"
 author: niels
-category: uncategorized
 ---
 Its easy to sequence Samples with Reloaded - and to record the sequence to a new sample.  
 

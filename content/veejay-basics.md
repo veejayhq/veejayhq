@@ -4,7 +4,6 @@ name: veejay-basics
 type: page
 date: "Mon, 17 Nov 2008 22:34:17 +0000"
 author: niels
-category: uncategorized
 ---
 
 

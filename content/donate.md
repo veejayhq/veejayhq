@@ -4,7 +4,6 @@ name: donate
 type: page
 date: "Fri, 01 Jan 2010 16:10:37 +0000"
 author: niels
-category: uncategorized
 ---
 We encourage everyone to contribute back into the project, whether by investing time (development work, writing documentation, providing examples, etc) or by a cryptocoin contribution. We are maintaining this project in our own time and thus have costs to maintain the development environment and hardware. All contributions are much appreciated.  
 

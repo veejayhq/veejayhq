@@ -4,7 +4,6 @@ name: home
 type: page
 date: "Sat, 03 Mar 2007 10:57:25 +0000"
 author: veejayhq
-category: news
 ---
 ## Veejay is a visual instrument  
 and realtime video sampler  

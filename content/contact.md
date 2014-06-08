@@ -4,7 +4,6 @@ name: contact
 type: page
 date: "Sun, 25 Nov 2007 10:41:59 +0000"
 author: matthijs
-category: documentation
 ---
 The best way to get in touch with veejay's developers and users is here:  
 

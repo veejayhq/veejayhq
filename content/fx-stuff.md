@@ -4,7 +4,6 @@ name: fx-stuff
 type: page
 date: "Mon, 17 Nov 2008 23:53:33 +0000"
 author: niels
-category: uncategorized
 ---
 FX created with veejay.  
 

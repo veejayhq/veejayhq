@@ -4,7 +4,6 @@ name: showcase
 type: page
 date: "Thu, 12 Apr 2007 17:02:51 +0000"
 author: niels
-category: news
 ---
 If you have created something with veejay, feel free to send a link about it.  
 

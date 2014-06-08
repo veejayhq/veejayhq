@@ -4,7 +4,6 @@ name: features
 type: page
 date: "Sun, 16 Nov 2008 22:27:51 +0000"
 author: niels
-category: uncategorized
 ---
 <div class="c1"># Veejay version 1.5.22  
 December 30, 2012  

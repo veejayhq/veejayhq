@@ -4,7 +4,6 @@ name: veejay-environment-variables
 type: page
 date: "Thu, 01 Jan 2009 16:42:55 +0000"
 author: niels
-category: uncategorized
 ---
 You can specify various environment variables to change veejay's behaviour.  
 

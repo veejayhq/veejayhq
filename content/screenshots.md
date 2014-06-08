@@ -4,7 +4,6 @@ name: screenshots
 type: page
 date: "Thu, 12 Apr 2007 17:10:36 +0000"
 author: niels
-category: news
 ---
 <div class="mceTemp">  
 
