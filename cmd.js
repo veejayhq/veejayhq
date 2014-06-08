@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+'use strict';
+
 var generate = require('./lib/render'),
     importer = require('./lib/import'),
     connect = require('connect'),
@@ -7,11 +9,12 @@ var generate = require('./lib/render'),
 
 var program = require('commander');
 
-program.option('-p, --port <port>', 'specify the port [3000]', Number, 3000)
+program.option('-p, --port <port>', 'specify the port [3000]', Number, 3000);
 
 function help() {
     console.log('Usage:\n');
     console.log('$ cmd.js build content public\n');
+    console.log('$ cmd.js serve public\n');
     console.log('');
 }
 
@@ -20,7 +23,7 @@ function build(src, dst) {
         source: Path.resolve(src),
         assets: Path.resolve(__dirname + '/assets'),
         target: Path.resolve(dst),
-    }
+    };
 
     generate(options, function() {
         process.exit();
@@ -32,7 +35,7 @@ function serve(path) {
     server.use(connect.static(path));
 
     server.listen(program.port, function() {
-        console.log('\033[90mserving \033[36m%s\033[90m on port \033[96m%d\033[0m', path, program.port);
+        console.log('serving %s on port %s', path, program.port);
     });
 }
 
