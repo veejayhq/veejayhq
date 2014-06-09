@@ -14,9 +14,9 @@ In order to make it work we'll need:
 http://puredata.info/Members/thomas/flext  
 * Niklas Klügel vinylcontrol~ external:  
 http://karhumusic.sesser.at/vinylcontrol/vinylcontrol.html  
-* [VeeJayVinylControl.pd.tar](http://www.veejayhq.net/wp-content/uploads/2013/09/VeeJayVinylControl.pd_.tar.gz):  
+* [VeeJayVinylControl.pd.tar](/uploads/2013/09/VeeJayVinylControl.pd_.tar.gz):  
 
-[![](http://www.veejayhq.net/wp-content/uploads/2013/09/VeeJayVinylControl-300x225.png "VeeJay Vinyl Control")](http://www.veejayhq.net/wp-content/uploads/2013/09/VeeJayVinylControl.png)  
+[![](/uploads/2013/09/VeeJayVinylControl.png)  
 
 Build flext could be not so easy, so I give you a little guide. Let's build flext with the build bash script:  
 
@@ -71,7 +71,7 @@ And 3 inlets:
 2) right input (take care of the cabling from your turntable)  
 3) reset for the relative start position  
 
-[![](http://www.veejayhq.net/wp-content/uploads/2013/09/vinylcontrol-300x264.png "Vinyl Control")](http://www.veejayhq.net/wp-content/uploads/2013/09/vinylcontrol.png)  
+[![](/uploads/2013/09/vinylcontrol.png)  
 
 The external doesn't work perfectly, so you have to measure the audio input gain until the number on the 3rd patch outlet increases when the vinyl starts. This is multiplied by the frame's number of our video (I think that it could be took from VeeJay, but I'm not too sure), and is connected to veejay current frame.  
 

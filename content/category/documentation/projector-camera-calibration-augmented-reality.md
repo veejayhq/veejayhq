@@ -25,10 +25,10 @@ As shown in the preview, the camera was mounted with an angle and doesnt capture
 
 <table class="c3" border="0" width="688"><tbody><tr><td align="left">[](file:///home/control/Desktop/projector-camera-calibration_files/start.png)  
 
-[caption id="attachment_123" align="aligncenter" width="150" caption="Setup screen"][![Setup screen](http://www.veejayhq.net/wp-content/uploads/2008/11/start1-150x150.png "start1")](http://www.veejayhq.net/wp-content/uploads/2008/11/start1.png)[/caption]</td><td class="c1"></td></tr></tbody><tbody><tr><td align="left">[](http://www.veejayhq.net/wp-content/uploads/2008/11/result1.png)  
+[caption id="attachment_123" align="aligncenter" width="150" caption="Setup screen"][![Setup screen](/uploads/2008/11/result1.png)  
 
 
-[![](http://www.veejayhq.net/wp-content/uploads/2008/11/result1-300x230.png "calibrated video")](http://www.veejayhq.net/wp-content/uploads/2008/11/result1.png)  
+[![](/uploads/2008/11/result1.png)  
 </td><td class="c1"></td></tr></tbody></table>  
 After pressing CTRL-s, we return to our now calibrated camera image.  
 This image you can use to process it for motion detection. In order to have veejay pre process filters on your camera stream while playing a sample press CTRL-d

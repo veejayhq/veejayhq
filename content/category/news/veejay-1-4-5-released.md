@@ -27,7 +27,7 @@ Added recorders for YUV planar 4:2:x JPEG/JFIF
 Added support for [TwinView/One Big Desktop](http://www.veejayhq.net/docs/veejay-environment-variables/) configurations  
 Auto loop plain mode  
 Sample create in reverse play  
-Remote listing for [veejay's working directory](http://www.veejayhq.net/wp-content/uploads/2009/01/medialist.jpg) in Reloaded  
+Remote listing for [veejay's working directory](/uploads/2009/01/medialist.jpg) in Reloaded  
 Added environment variables to customize veejay behaviour, see veejay -u or man veejay  
 VEEJAY_INTERPOLATE_CHROMA  
 VEEJAY_SDL_KEY_REPEAT  

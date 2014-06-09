@@ -43,7 +43,7 @@ $ aconnect 128 129
 
 We'r done on the commandline now and we can start learning midi events in  
 reloaded. Click GVeejay -> Midi -> Learn Midi  
-[caption id="attachment_173" align="alignnone" width="314" caption="MIDI"][![MIDI](http://www.veejayhq.net/wp-content/uploads/2008/11/midi.png "MIDI - menuitem")](http://www.veejayhq.net/wp-content/uploads/2008/11/midi.png)[/caption]  
+[caption id="attachment_173" align="alignnone" width="314" caption="MIDI"][![MIDI](/uploads/2008/11/midi.png)[/caption]  
 
 In the statusbar , you will see the message '*Learning MIDI commands. Touch a midi key and then click a widget.*' . Now, we can bind for example NoteOn to the Play Forward button by hitting the note on the keyboard and then by pressing the play forward button. Reloaded will learn MIDI events until you click 'Enable MIDI' in the menu.  
 

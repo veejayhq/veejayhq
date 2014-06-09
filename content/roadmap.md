@@ -5,4 +5,4 @@ type: page
 date: "Mon, 17 Nov 2008 23:20:43 +0000"
 author: niels
 ---
-[![](http://www.veejayhq.net/wp-content/uploads/2008/11/roadmapveejayclassic.png "roadmapveejayclassic")](http://www.veejayhq.net/wp-content/uploads/2008/11/roadmapveejayclassic.png)
+[![](/uploads/2008/11/roadmapveejayclassic.png)

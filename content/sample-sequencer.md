@@ -8,7 +8,7 @@ author: niels
 Its easy to sequence Samples with Reloaded - and to record the sequence to a new sample.  
 
 This is how the Sequencer looks like:  
-[caption id="attachment_200" align="aligncenter" width="194" caption="Sequencer"][![Sequencer](http://www.veejayhq.net/wp-content/uploads/2008/11/sequencer-194x300.png "Sequencer")](http://www.veejayhq.net/wp-content/uploads/2008/11/sequencer.png)[/caption]  
+[caption id="attachment_200" align="aligncenter" width="194" caption="Sequencer"][![Sequencer](/uploads/2008/11/sequencer.png)[/caption]  
 
 In the 10x10 board below you have 100 slots, in each you can place exactly one sample.  
 First, play the sample you want to sequence and left-mouse click one of the slots. Do  

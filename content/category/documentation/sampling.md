@@ -11,7 +11,7 @@ If you have started veejay with one or more video file(s) (thus **not with** `$ 
 
 First, Veejay must be running in *plain mode*  
 
-![top buttonbar](http://www.veejayhq.net/wp-content/galleries/screenshots/reloaded_bar1.png)  
+![top buttonbar](/galleries/screenshots/reloaded_bar1.png)  
 
 
 Then, you can press the In and Out button to set the starting and ending position of a sample ; Pressing the 'Out'  
@@ -22,7 +22,7 @@ When a sample is created it has a partial copy of the Edit Decision List; You ca
 After each commit, the starting position of the sample is set equal to the ending position of the last created sample,  
 you can repeatedly press the Out point button to quickly create a series of samples.  
 
-![navigation buttons](http://www.veejayhq.net/wp-content/galleries/screenshots/reloaded_nav1.png)  
+![navigation buttons](/galleries/screenshots/reloaded_nav1.png)  
 
 If you have started Veejay in dummy mode, the only way to add videofiles is by GVeejay -> Sample -> New from file.  
 

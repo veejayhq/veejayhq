@@ -10,7 +10,7 @@ FX created with veejay.
 
 # very old stuff  
 <div>  
-![Image map](http://www.veejayhq.net/wp-content/uploads/2008/11/photo_index.png)  
+![Image map](/uploads/2008/11/photo_index.png)  
 <map id="photo_index" name="photo_index">  
 <area href="http://www.veejayhq.net/wp-content/uploads/2008/11/blendkey1.jpg" shape="rect" coords="0,0,53,49" alt=""></area>  
 <area href="http://www.veejayhq.net/wp-content/uploads/2008/11/blendkey2.jpg" shape="rect" coords="54,0,107,49" alt=""></area>  

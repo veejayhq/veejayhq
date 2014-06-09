@@ -15,7 +15,7 @@ You can specify various environment variables to change veejay's behaviour.
 
 
 TwinView setup, Screen 0:1600x1024 Screen1: 1024x768  
-[![](http://www.veejayhq.net/wp-content/uploads/2009/01/ms.jpg "ms")](http://www.veejayhq.net/wp-content/uploads/2009/01/ms.jpg)  
+[![](/uploads/2009/01/ms.jpg)  
 
 `$ export VEEJAY_SCREEN_GEOMETRY=2624x1024+1600x0  
 $ export VEEJAY_SCREEN_SIZE=1024x768  
