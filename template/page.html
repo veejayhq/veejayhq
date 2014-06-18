@@ -1,6 +1,7 @@
 {% extends 'layout/page.html' %}
 
 {% block content %}
+    <h2>{{ page.title }}</h2>
     <div class="blog-post">
         {{ page.content|marked }}
     </div><!-- /.blog-post -->
