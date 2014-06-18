@@ -1,7 +1,7 @@
 ---
 title: veejay environment variables
 name: veejay-environment-variables
-type: page
+type: post
 date: "Thu, 01 Jan 2009 16:42:55 +0000"
 author: niels
 ---

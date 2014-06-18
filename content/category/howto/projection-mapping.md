@@ -1,7 +1,7 @@
 ---
 title: Projection Mapping
 name: projection-mapping
-type: page
+type: post
 date: "Sat, 24 Nov 2012 07:29:20 +0000"
 author: xendarboh
 ---

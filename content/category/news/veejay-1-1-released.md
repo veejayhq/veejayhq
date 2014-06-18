@@ -4,7 +4,7 @@ name: veejay-1-1-released
 type: post
 date: "Fri, 30 Nov 2007 22:36:02 +0000"
 author: matthijs
-category: documentation
+category: news
 tags: []
 ---
 veejay 1.1 is available from the repository, its a bugfix release of  

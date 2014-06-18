@@ -4,7 +4,7 @@ name: how-to-use-midi
 type: post
 date: "Sun, 01 Apr 2007 22:07:01 +0000"
 author: veejayhq
-category: documentation
+category: howo
 tags: []
 ---
 **Reloaded 1.0** supports MIDI devices through ALSA  

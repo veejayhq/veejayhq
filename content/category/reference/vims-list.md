@@ -1,7 +1,7 @@
 ---
 title: VIMS List
 name: vims-list
-type: page
+type: post
 date: "Mon, 17 Nov 2008 23:04:50 +0000"
 author: niels
 ---

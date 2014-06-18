@@ -1,7 +1,7 @@
 ---
 title: fx stuff
 name: fx-stuff
-type: page
+type: post
 date: "Mon, 17 Nov 2008 23:53:33 +0000"
 author: niels
 ---

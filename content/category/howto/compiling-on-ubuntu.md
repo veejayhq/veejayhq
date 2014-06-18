@@ -1,10 +1,16 @@
 ---
 title: "Compiling on Ubuntu "
 name: compiling-on-ubuntu
-type: page
+type: post
 date: "Wed, 06 Jul 2011 13:34:56 +0000"
 author: matthijs
 ---
+
+# *warning this documentation is a bit out of date*
+
+Please [contact](/contact) us if you need help.
+
+
 ### 1. Introduction  
 Compiling Veejay is not hard; however, there are a number of caveats to be ware of. The following document is intended to guide you trough a number of steps needed to start compiling, and hopefully, running veejay on Ubuntu/Debian based distro's. You will need to type in some commands in the terminal; The final steps in this document will assume that you can move around a bit on the commandline too  
 

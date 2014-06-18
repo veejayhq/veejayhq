@@ -4,7 +4,7 @@ name: veejay-vinyl-control
 type: post
 date: "Tue, 24 Sep 2013 18:37:24 +0000"
 author: juancito
-category: documentation
+category: howo
 tags: []
 ---
 This guide is aimed to use Serato or Traktor timecode with VeeJay's playback. You need to have VeeJay server, Reloaded, sendVIMS and Puredata already installed. Also we need Jackd daemon, in this example I'll use QJackCtl to set audio connection and configuration.  

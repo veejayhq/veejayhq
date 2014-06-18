@@ -1,7 +1,7 @@
 ---
 title: Dependencies
 name: dependencies
-type: page
+type: post
 date: "Mon, 17 Nov 2008 21:46:12 +0000"
 author: niels
 ---

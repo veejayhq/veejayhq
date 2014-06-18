@@ -1,7 +1,7 @@
 ---
 title: LiViDO/OSC
 name: livido-osc
-type: page
+type: post
 date: "Sun, 14 Nov 2010 16:26:37 +0000"
 author: niels
 ---

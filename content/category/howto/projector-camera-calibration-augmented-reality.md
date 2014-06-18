@@ -4,7 +4,7 @@ name: projector-camera-calibration-augmented-reality
 type: post
 date: "Tue, 11 Nov 2008 18:24:46 +0000"
 author: niels
-category: documentation
+category: howo
 tags:
   - augmented-reality
   - calibration

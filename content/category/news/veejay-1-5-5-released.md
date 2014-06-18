@@ -4,7 +4,7 @@ name: veejay-1-5-5-released
 type: post
 date: "Thu, 21 Oct 2010 18:09:13 +0000"
 author: niels
-category: documentation
+category: news
 tags: []
 ---
 **veejay 1.5.5 is out now!**  

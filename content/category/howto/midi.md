@@ -1,7 +1,7 @@
 ---
 title: MIDI
 name: midi
-type: page
+type: post
 date: "Mon, 17 Nov 2008 19:25:02 +0000"
 author: niels
 ---
