@@ -2,11 +2,16 @@
 
 {% block content %}
     {% for post in page.posts %}
-    <div class="blog-post">
-        <h2 class="blog-post-title"><a href="{{ post.path }}">{{ post.title }}</a></h2>
-        <p class="blog-post-meta">{{ post.date|strftime('%B %d, %Y') }}</p>
-        {{ post.content|marked }}
-    </div><!-- /.blog-post -->
+    <div class="list-box">
+        <div class="post">
+            <h2 class="blog-post-title"><a href="{{ post.path }}">{{ post.title }}</a></h2>
+            <p class="blog-post-meta">{{ post.date|strftime('%B %d, %Y') }}</p>
+            {{ post.content|marked }}
+        </div>
+        <div class="list-box-gradient">
+        </div>
+    </div>
+    <h4><a href="{{ post.path }}">read more &raquo;</a></h4>
     <hr/>
     {% endfor %}
 {% endblock %}
