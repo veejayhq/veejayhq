@@ -22,6 +22,10 @@
       img {
         max-width: 100%;
       }
+
+      .blog-sidebar a {
+        text-transform: capitalize;
+      }
     </style>
   </head>
 
@@ -57,7 +61,15 @@
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module">
+            {% if page.posts %}
+            <h4>Category index</h4>
+            <ul class="list-unstyled">
+              {% for post in page.posts %}
+              <li><a href="{{ post.path }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+
             <h4>Categories</h4>
             <ol class="list-unstyled">
                 {% for category in categories %}
@@ -70,8 +82,7 @@
                 <li><a href="{{ page.path }}">{{ page.title }}</a></li>
                 {% endfor %}
             </ol>
-          </div>
-        </div><!-- /.blog-sidebar -->
+        </div>
 
       </div><!-- /.row -->
 
