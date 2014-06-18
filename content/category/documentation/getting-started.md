@@ -8,7 +8,7 @@ author: niels
 
 **needs merge with [veejay basics](/documentation/veejay-basics/)**
 
-## First Time Run
+###First Time Run
 
 Once you got veejay installed on your computer, you may need to configure it for your specific setup,  
 
@@ -51,7 +51,7 @@ For example
 There are more environment variables described in  
 $ man veejay  
 
-### Running Veejay
+#### Running Veejay
 
 There are several ways to start using Veejay. Very often veejay is started in Dummy mode (Showing black video) and Samples are created by loading a Video File in Reloaded. Another way to start veejay is to feed it some videofiles on the commandline; i.e. veejay -v *.avi. Veejay will place all videofiles entered on the commandline in one big Edit Descision List and start playing in *plain* mode. Now, you can use the left and right bracket keys on your keyboard to set in- and out points for the sample to be created. Pressing the right bracket '**]**' will create a new sample. Switching from *sample* to *plain* mode can be done with '**/**' , the keys **F1** to **F12** play sample**1** to sample**12**,  
 

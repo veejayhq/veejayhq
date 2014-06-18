@@ -16,7 +16,7 @@ tags:
 Use veejay 1.4 to calibrate your camera against a projector or a monitor screen in order to calculate the position of a physical object.  
 
 
-## Calibration  
+###Calibration  
 Press CTRL-s to bring up the setup screen:  
 
 

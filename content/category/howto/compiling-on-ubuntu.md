@@ -6,20 +6,20 @@ date: "Wed, 06 Jul 2011 13:34:56 +0000"
 author: matthijs
 ---
 
-# *warning this documentation is a bit out of date*
+##*warning this documentation is a bit out of date*
 
 Please [contact](/contact) us if you need help.
 
 
-### 1. Introduction  
+#### 1. Introduction  
 Compiling Veejay is not hard; however, there are a number of caveats to be ware of. The following document is intended to guide you trough a number of steps needed to start compiling, and hopefully, running veejay on Ubuntu/Debian based distro's. You will need to type in some commands in the terminal; The final steps in this document will assume that you can move around a bit on the commandline too  
 
 
-### 2. Versions  
+#### 2. Versions  
 Software versions used in this document refer to Ubuntu 10.04 LTS/Lucid Lynx and veejay v1.5.9-4 retrieved from Git. Since both ubuntu and veejay are moving targets, we advice you to always try and use the latest versions available. When in trouble, just [contact us.](http://groups.google.com/group/veejay-discussion?hl=en)  
 
 
-### 3. Prerequisite  
+#### 3. Prerequisite  
 **Ubuntu 10.x:** Veejay uses a set of packages called "libavutils". The versions shipped by ubuntu may not be up-to-date. I've found the "MOTU Media" packages of excellent quality and use those instead.(https://launchpad.net/~motumedia/+archive/ppa) . You may add the MOTU repositories using the following command: $ sudo apt-add-repository ppa:motumedia/ppa.  
 
 Also, note that you will need **veejay 1.5.20** from git. This version of veejay works with ffmpeg-0.8.12 "Love".  
@@ -81,13 +81,13 @@ The list below lists all dependencies:
     libgconf2-dev
 
 
-### 4. Downloading veejay  
+#### 4. Downloading veejay  
 <span class="c1">The recommended way</span>Use GIT repository. This will contain the latest version and bugfixes of the current code. An alternative is to use a snapshot release. Git can be installed from synaptic. When looking for help, always supply the used versions of the software, as a bug may have been fixed in a later version.  
 
 [Look here for a description of how to download veejay using git.](http://www.veejayhq.net/download-2/)  
 
 
-### 5. Compiling  
+#### 5. Compiling  
 After downloading and unpacking veejay you should have a directory tree that looks like this:  
 
 

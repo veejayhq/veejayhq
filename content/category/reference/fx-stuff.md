@@ -8,7 +8,7 @@ author: niels
 FX created with veejay.  
 
 
-# very old stuff  
+##very old stuff  
 <div>  
 ![Image map](/uploads/2008/11/photo_index.png)  
 <map id="photo_index" name="photo_index">  

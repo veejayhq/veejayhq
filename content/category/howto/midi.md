@@ -5,7 +5,7 @@ type: post
 date: "Mon, 17 Nov 2008 19:25:02 +0000"
 author: niels
 ---
-# Configuring the MIDI device  
+##Configuring the MIDI device  
 
 Reloaded supports MIDI devices through ALSA, which means you have to connect  
 your MIDI device to reloaded.  

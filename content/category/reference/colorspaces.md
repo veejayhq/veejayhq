@@ -5,7 +5,7 @@ type: post
 date: "Mon, 17 Nov 2008 21:27:17 +0000"
 author: niels
 ---
-# Colorspaces
+##Colorspaces
 
 Veejay processes all video in YUV planar mostly for historical reasons - nowadays, VJ software is shifting to the domain of the GPU and OpenGL . However:  
 - A lot of (older) capture hardware delivers in some YUV format  

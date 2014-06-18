@@ -38,4 +38,4 @@ Simple sequencing, or multiple veejays all controlled by one shout, it can be do
 [![A simple video sequencer](/uploads/2007/05/help-vims-sequencer.png "A simple video sequencer")  
 
 
-## A simple video sequencer
+###A simple video sequencer

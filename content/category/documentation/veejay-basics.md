@@ -8,7 +8,7 @@ author: niels
 
 
 
-# Rules of Thumb  
+##Rules of Thumb  
 - Veejay is the server  
 - Reloaded is the client  
 - Sayvims is the console mini-client  
@@ -16,7 +16,7 @@ author: niels
 - Veejay's console output logs your actions  
 
 
-## system docs  
+###system docs  
 
 
 `  
@@ -27,7 +27,7 @@ $ veejay -u
 `  
 
 
-## Various ways to launch the server  
+###Various ways to launch the server  
 
 
 In dummy mode (just a stream with black video, hit the color wheel in the Stream pad  
@@ -50,7 +50,7 @@ $ veejay -v mjpeg-video-file.avi
 `  
 
 
-## Solo'ing the server  
+###Solo'ing the server  
 
 All the keybindings in veejay depend on SDL; if you move your mouse over to the  
 SDL windows to focus it you can interact directly with the output.  
@@ -94,7 +94,7 @@ All keys are listed in
 $ man veejay  
 `
 
-## Video sampling
+###Video sampling
 
 If you have started veejay with one or more video file(s) (thus **not with** `$ veejay -d` ), you can easily create new samples;
 

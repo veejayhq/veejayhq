@@ -8,16 +8,16 @@ author: niels
 ![](veejay-icon.png)  
 
 
-# Technical Specification  
+##Technical Specification  
 
 
-## LiViDO/OSC Technical Specification for [Veejay](http://www.veejayhq.net)  
+###LiViDO/OSC Technical Specification for [Veejay](http://www.veejayhq.net)  
 (C) Niels Elburg 2010  
 
 *Drafting LiViDO/OSC specification for Veejay*  
 
 
-# Versions  
+##Versions  
 LiViDO/OSC Nov 11th , 2010  
 
 
@@ -46,22 +46,22 @@ Livido 1.0 beta version 2005- 2010
 (C) Gabriel "Salsaman" Finch, Niels Elburg, Dennis "Jaromil" Rojo, Daniel Fischer, Martin Bayer, Kentaro Fukuchi, Andraz Tori 2005.  
 
 
-## LIVIDO_API_VERSION  
+###LIVIDO_API_VERSION  
 This is defined as 102 for this version of the specification.  
 
 
-## LIVIDO GENERAL DESIGN  
+###LIVIDO GENERAL DESIGN  
 Livido is an architecture to enable interchange of video processing plugins between video applications in a standardized and compatible way.  
 
 This document describes the LiViDO/OSC extension for Veejay  
 
 
-## LiViDO  
+###LiViDO  
 Livido plugin is a shared object that application can load. Inside a plugin there can be implementations of many different filters, each filter implementation is called a filter class. Host gets to know a list of classes a plugin provides when calling livido_setup function. A class description includes descriptions of inputs and outputs filter can handle. Inputs and outputs can be channels and parameters. Descriptions of acceptable types of channels and parameters are called channel templates and parameter templates respectively. Host prepares for instantination of the filter by setting input and output channels and input parameters and then instantinates a filter. Host can use process_func() on that instance until it deinits an instance.  
 All passing of data between hosts and plugins is done trough ports, ports are the only C structures defined in Livido.  
 
 
-## OSC  
+###OSC  
 **OpenSound Control**(OSC) is a content format for sharing (music) performance data (such as gestures, parameters and note sequenecs) between (musical) instruments.  
 
 Each LiViDO plugin exports its capability set to the outside world using a OSC namespace  
@@ -89,7 +89,7 @@ Each LiViDO plugin exports its capability set to the outside world using a OSC n
 *     
 
 
-### OSC Namespace  
+#### OSC Namespace  
 
 
 #### Container  
@@ -168,7 +168,7 @@ Each LiViDO plugin exports its capability set to the outside world using a OSC n
     /<Plugin Name>/<ID*>/<Parameter Name>/unbind/<Plugin Name>/<ID*>/<Parameter Name>  
 
 
-## PORTS  
+###PORTS  
 A *port* is a set of one or more *properties*:  
 
 Each port has a mandatory property called "type" (see below), depending upon "type" property port has other mandatory and optional properties.  
@@ -217,7 +217,7 @@ This returns a pointer to newly allocated port with the "type" property set to *
 Port types >=512 are available for custom use.  
 
 
-## PROPERTIES  
+###PROPERTIES  
 As mentioned above, each port is a set of one or more properties.  
 
 A property has:  
@@ -241,7 +241,7 @@ A property has:
 *     
 
 
-## PROPERTY RESTRICTIONS  
+###PROPERTY RESTRICTIONS  
 Access to properties is restricted in certain cases, these are restriction flags used troughout this document:  
 
 
@@ -265,7 +265,7 @@ Access to properties is restricted in certain cases, these are restriction flags
 Properties inherit restriction of the port where we do not specify otherwise.  
 
 
-## ATOM TYPES  
+###ATOM TYPES  
 LiViDO offers the following **fundamental** types (number <64):  
 
 
@@ -308,7 +308,7 @@ LiViDO offers the following **fundamental** types (number <64):
 Types >=512 are available for custom use. Custom atom types must be pointer types, since livido cannot guess their byte size or type.  
 
 
-## PORT TYPE PLUGIN INFO  
+###PORT TYPE PLUGIN INFO  
 Port enables a plugin function livido_setup to tell the host what filter classes are available. Port is PLUGINSET and FINAL after livido_setup() finishes.  
 
 
@@ -346,7 +346,7 @@ Port enables a plugin function livido_setup to tell the host what filter classes
 *     
 
 
-## PORT TYPE FILTER CLASS  
+###PORT TYPE FILTER CLASS  
 Port type filter class is used to describe all properties of a single filter class. Port is PLUGINSET and FINAL after livido_setup().  
 
 "type" == LIVIDO_PORT_TYPE_FILTER_CLASS  
@@ -407,7 +407,7 @@ Port type filter class is used to describe all properties of a single filter cla
 *     
 
 
-## PORT TYPE FILTER INSTANCE  
+###PORT TYPE FILTER INSTANCE  
 Port type filter instance is used to hold all data that are related to a single instance of the filter all properties of a single filter class. Port is HOSTSET after livido_setup.  
 
 "type" == LIVIDO_PORT_TYPE_FILTER_INSTANCE  
@@ -447,7 +447,7 @@ Port type filter instance is used to hold all data that are related to a single 
 *     
 
 
-## PORT TYPE CHANNEL TEMPLATE  
+###PORT TYPE CHANNEL TEMPLATE  
 Port type channel template is used as a description of a single channel (input or output) a filter can handle. Port is PLUGINSET and FINAL after livido_setup.  
 
 
@@ -502,7 +502,7 @@ There can be only backward references in the array. For example channel 2 can ha
 Output channels can, however, reference input channels at will  
 
 
-## PORT TYPE CHANNEL  
+###PORT TYPE CHANNEL  
 Port type channel is used as a fixation of channel properties that the host sets and plugin reads to know what it is getting. Port is HOSTSET after init_func(). Channels should be a one-one match with channel templates (same order, same number).  
 
 
@@ -564,7 +564,7 @@ Port type channel is used as a fixation of channel properties that the host sets
 *     
 
 
-## PORT TYPE PARAMETER TEMPLATE  
+###PORT TYPE PARAMETER TEMPLATE  
 Port type parameter template is used as a description of a single parameter (input or output) filter can handle. Port is PLUGINSET and FINAL after livido_setup.  
 
 **Mandatory properties**:  
@@ -724,7 +724,7 @@ Additional properties that kind causes:
 *     
 
 
-## PORT TYPE PARAMETER  
+###PORT TYPE PARAMETER  
 Port type parameter is used for passing a single (input or output) . Input parameters are HOSTSET and output parameters are PLUGINSET. Parameters should be a one-one match with channel templates (same order, same number).  
 
 **Mandatory properties**:  
@@ -739,7 +739,7 @@ Port type parameter is used for passing a single (input or output) . Input param
 *     
 
 
-## GETTING/SETTING PROPERTY VALUES  
+###GETTING/SETTING PROPERTY VALUES  
 On livido_property_set(), the host/plugin programmer does not need to worry about allocating and freeing memory for the data to store. The model (or more precisely the Mediation layer) will take care of that for you. If you store an object the model will make a copy and store that. Later, when you set a new value in this property, the model will automatically livido_free() the old value and make a copy of the new value and store the copy.  
 
 The exception to this is any atom type of type PTR. If you allocate a chunk of data or a complex structure only the pointer value is stored (!). The model does not know anything about the content of the data your pointer refers to so it will not make a copy. Instead, you need to allocate and free the memory yourself in this case.  
@@ -751,7 +751,7 @@ On livido_property_get(), Livido will copy the data stored in the property, exce
 For setting pointer types, host/plugin must pass in a size_t array with the atom sizes.  
 
 
-## LIVIDO CORE FUNCTIONS  
+###LIVIDO CORE FUNCTIONS  
 All host implementations must implement and offer the following core functions. The functions reside inside a host and plugin dynamically links to them upon loading.  
 
 
@@ -820,7 +820,7 @@ e.g. for LIVIDO_ATOM_TYPE_INT it is an int *. The number of elements in the arra
 Functions livido_malloc_f(), livido_free_f(), livido_memset_f(), livido_memcpy_f() have exactly the same semantics as malloc, free(), memset() and memcpy() from libc. Their purpose is to allow a host to provide a plugin with the application-specific memory managment. Plugins MUST NOT use malloc, free and memset, but have to use livido counterparts.  
 
 
-## PLUGIN FUNCTIONS  
+###PLUGIN FUNCTIONS  
 The only symbol plugin MUST export is livido_setup() function pointer, all other information is passed through respective ports (classes, functions, etc...)  
 
 
@@ -872,7 +872,7 @@ The port MUST have **type** LIVIDO_PORT_TYPE_FILTER_INSTANCE
 host calls this to allow the plugin to free() any internal memory. Following this the host may free() the instance's port. The plugin does not need to free any ports or parameters, the host should take care of this.c  
 
 
-## OUTLINE LIVIDO PROCESS FLOW OVERVIEW  
+###OUTLINE LIVIDO PROCESS FLOW OVERVIEW  
 
 
 *     
@@ -917,7 +917,7 @@ host calls this to allow the plugin to free() any internal memory. Following thi
 *     
 
 
-## LIVIDO FLAGS AND TYPES  
+###LIVIDO FLAGS AND TYPES  
 
 
 #### Livido palette types  
@@ -1167,7 +1167,7 @@ Sampling types >=1024 are available for custom samplings.
 Interlace types >=1024 are available for custom interlacing.  
 
 
-## Livido errors  
+###Livido errors  
 
 
 *     
@@ -1275,7 +1275,7 @@ Interlace types >=1024 are available for custom interlacing.
 Error numbers >=1024 are available for custom errors.  
 
 
-## livido.h  
+###livido.h  
 
 
     /* LiViDO is free software; you can redistribute it and/or  
@@ -1540,7 +1540,7 @@ Error numbers >=1024 are available for custom errors.
     * endif // #ifndef __LIVIDO_H__  
 
 
-## livido.c  
+###livido.c  
 This is a reference implementation of the livido core library. It will eventually be made into a library which can be linked in at compile time.  
 
 
@@ -1849,10 +1849,10 @@ This is a reference implementation of the livido core library. It will eventuall
     }  
 
 
-## Sample code  
+###Sample code  
 
 
-## Section 1: Examples using only the core functions  
+###Section 1: Examples using only the core functions  
 
 
 #### Example 1.1: Creating and freeing a port  
@@ -2221,7 +2221,7 @@ This is a reference implementation of the livido core library. It will eventuall
     }  
 
 
-## Section 2: Examples using the livido-utility functions  
+###Section 2: Examples using the livido-utility functions  
 
 
 #### Example 2.1: Creating and freeing a port, setting and reading an int property, checking if properties exist  

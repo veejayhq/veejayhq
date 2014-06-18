@@ -6,7 +6,7 @@ date: "Mon, 17 Nov 2008 22:49:54 +0000"
 author: niels
 ---
 
-## Plugins
+###Plugins
 
 Veejay can load both FreeFrame and Frei0r plugins. By default, veejay loads no plugins.
 You must create a file and enter the location of the plugins you want to load.
@@ -23,7 +23,7 @@ The contents of the file can look like:
 Veejay will pick up the plugins the next time you start it.
 
 
-# VIMS  
+##VIMS  
 
 
 VIMS is veejay's internal message system - its simple and in plain ASCII.  
@@ -48,7 +48,7 @@ $ veejay -u -n |less
 to dump all VIMS messages.  
 
 
-## The Message Format  
+###The Message Format  
 
 A message is described as:  
 
@@ -61,32 +61,32 @@ Examples:
     099:0 0;  
 
 
-### <Action Identifier>  
+#### <Action Identifier>  
 The action identifier is a 3 digit number describing a Network Event  
 The colon is used to indicate the start of the Argument List and must be given.  
 
 
-### <Argument List>  
+#### <Argument List>  
 The Argument List is described by a printf() style formatted template  
 which describes the number and type of arguments to be used.  
 
 The semicolon must be given to indicate the end of this message  
 
 
-## Reserved Values  
+###Reserved Values  
 Some reserved numbers:  
 
 
 <table><tr><td>clip id</td><td>0</td><td>select currently playing sample</td></tr><tr><td>clip id</td><td>-1</td><td>select highest sample number</td></tr><tr><td>chain entry</td><td>-1</td><td>select current chain entry</td></tr><tr><td>stream id</td><td>0</td><td>select currently playing stream</td></tr><tr><td>stream id</td><td>-1</td><td>select highest stream number</td></tr><tr><td>key modifier</td><td colspan="2">0 = nonone, 1= alt , 2 = ctrl, 3 = shift</td><td></td></tr><tr><td>frame</td><td>-1</td><td>use highest possible frame number</td></tr><tr><td>playback mode</td><td colspan="2">0 = clip, 1 = stream, 2 = plain</td><td></td></tr><tr><td>data format</td><td colspan="2">yv16 (yuv 4:2:2 raw) , mpeg4, divx, msmpeg4v3,div3, dvvideo, dvsd, mjpeg, i420 and yv12 (yuv 4:2:0 raw)</td><td></td></tr><tr><td>loop type</td><td colspan="2">0 = no looping, 1 = normal loop, 2 = pingpong (bounce) loop</td><td></td></tr></table>
 
-## Images
+###Images
 
-### Using images as a source
+#### Using images as a source
 
 Veejay currently supports `jpeg`, `png` and `bmp` images as a source, meaning you can mix
 static images with moving video.
 
-### Writing images
+#### Writing images
 
 Making screenshots (scales and save image to file)
 
@@ -96,7 +96,7 @@ for example
 
     $ sayVIMS "330:640 480 screenshot.png;"
 
-## Sound output
+###Sound output
 
 Veejay plays audio through **Jack**
 
@@ -112,7 +112,7 @@ you need to setup jack in the proper samplerate.
 
     $ jackd -r 44100
 
-## Performance tuning
+###Performance tuning
 
 Veejay's performance depends much on the memory bandwidth, CPU and disk access times.
 
@@ -134,7 +134,7 @@ for playing full PAL avi's containing RAW YUV.
 
 (you can test yours with hdparm -T -t /dev/hdX)
 
-## Caching
+###Caching
 
 Veejay has a caching mechanism that loads (compressed) images from disk into RAM. Frames
 furthest away from the currently played position will be discarded first when the cache size

@@ -6,14 +6,14 @@ date: "wo jun 18 23:23:02 CEST 2014"
 author: matthijs
 ---
 
-## Introduction
+###Introduction
 
 Veejay has a client-server architecture. This means that multiple clients can connect to
 the same veejay `server` or even multiple servers, possible running on different computers even.
 
 Reloaded is a graphical client for veejay, providing nice buttons and sliders to play with.
 
-## Sample sequencer
+###Sample sequencer
 
 Its easy to sequence Samples with Reloaded - and to record the sequence to a new sample.
 
@@ -28,7 +28,7 @@ bottom right and empty slots are simply skipped. The play pattern in the grid be
 
 You can click the 'Play and repeat sample grid' which will do the obvious, play the pattern.
 
-## Video mixing
+###Video mixing
 
 Veejay can (down)mix from multiple sources
 
@@ -49,7 +49,7 @@ The maximum number of tracks can be increased on reloaded's command line.
 
 The MT panel provides synchronized playback controls
 
-## Multi (Veejay) Tracker
+###Multi (Veejay) Tracker
 
 Reloaded can track multiple veejay servers.
 
