@@ -23,12 +23,10 @@ Press CTRL-s to bring up the setup screen:
 As shown in the preview, the camera was mounted with an angle and doesnt capture the full projection area. We simply select the edges of the projection we see in the camera image, select forward transformation and press CTRL-s again to leave the setup.  
 
 
-<table class="c3" border="0" width="688"><tbody><tr><td align="left">[](file:///home/control/Desktop/projector-camera-calibration_files/start.png)  
+<table class="c3" border="0" width="688"><tbody><tr><td align="left">![Setup screen](/uploads/2008/11/start.png Setup screen)  
 
-[caption id="attachment_123" align="aligncenter" width="150" caption="Setup screen"][![Setup screen](/uploads/2008/11/result1.png)  
+![](/uploads/2008/11/result1.png)  
 
-
-[![](/uploads/2008/11/result1.png)  
 </td><td class="c1"></td></tr></tbody></table>  
 After pressing CTRL-s, we return to our now calibrated camera image.  
 This image you can use to process it for motion detection. In order to have veejay pre process filters on your camera stream while playing a sample press CTRL-d
