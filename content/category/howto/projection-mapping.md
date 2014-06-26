@@ -15,27 +15,15 @@ Both Veejay and LPMT are Free software with source code released under versions 
 
 #### WEBSITES:  
 
-
-*     
-
 *   LPMT: <http://hv-a.com/lpmt/>
-*     
 
 *   v4l2loopback: <https://github.com/umlaeute/v4l2loopback>
-*     
-
 
 #### REFERENCES:  
 
-
-*     
-
 *   A work-in-progress "Super-Sexy Secret Manual" for LPMT version 1.4 <http://hv-a.com/lpmt/?page_id=195>
-*     
 
 *   v4l2loopback usage examples <https://github.com/umlaeute/v4l2loopback/wiki>
-*     
-
 
 #### INSTALLATION:  
 
@@ -129,14 +117,9 @@ You may want to use several terminal windows for this. You may need to specify t
 Refer to the LPMT manual for how to configure your projection mapping. Do this to see veejay output right away:  
 
 
-*     
-
 *   press <F2> (or "x")
-*     
 
 *   click "cam on/off" to enable it. You may need to select a different camera number from the "select camera" list.
-*     
-
 
 #### CONCLUSION:  
 Epic!!! A Free VJ projection mapping solution for Linux! Thanks to all the people who have created these open source softwares and for their foresight and attention that has enabled interoperability.
