@@ -69,7 +69,7 @@ Play around, LPMT is cool! Press __h__ for a command overview and refer to the m
     crw-rw----+ 1 root video 81, 0 Nov 15 15:12 /dev/video0  
     crw-rw----+ 1 root video 81, 1 Nov 15 23:02 /dev/video1
 
-_/dev/video0_ is my webcam (because it was already loaded first) and _/dev/video1_ is the v4l2loopback video device -- it is the most recently created device with the highest number. The rest of this document uses /dev/video1 as the v4l2loopback device, substitute according to your setup. Make sure the system user that will be running Veejay and LPMT has permission to read and write to the device. In my case, my user needs to be in the "video" group.  
+_/dev/video0_ is my webcam (because it was already loaded first) and _/dev/video1_ is the v4l2loopback video device -- it is the most recently created device with the highest number. The rest of this document uses _/dev/video1_ as the v4l2loopback device, substitute according to your setup. Make sure the system user that will be running Veejay and LPMT has permission to read and write to the device. In my case, my user needs to be in the "video" group.  
 
 Now, to configure LPMT. In the directory containing the lpmt binary, you should also find a "data" and "libs" directory.  
 
@@ -119,7 +119,7 @@ Refer to the LPMT manual for how to configure your projection mapping. Do this t
 
 *   press __F2__ (or __x__)
 
-*   click __cam on/off__ to enable it. You may need to select a different camera number from the "select camera" list.
+*   click __cam on/off__ to enable it. You may need to select a different camera number from the __select camera__ list.
 
 #### CONCLUSION:  
 Epic!!! A Free VJ projection mapping solution for Linux! Thanks to all the people who have created these open source softwares and for their foresight and attention that has enabled interoperability.
