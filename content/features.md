@@ -11,7 +11,7 @@ December 30, 2012
 **</div>  
 <div class="c1">  
 <http://veejayhq.net>  
-<http://veejay.dyne.org>  
+<http://code.dyne.org/veejay/>  
 </div>  
 <div class="c1">**  
 Veejay is a visual instrument and real-time video sampler.  
@@ -20,8 +20,8 @@ While playing, you can record the resulting video directly to disk (video sampli
 
 
 <div class="c1">  
-[Camera calibration with veejay](http://www.veejayhq.net/2008/11/projectorcamera-calibration-augmented-reality)   
-[Reloaded](http://www.veejayhq.net/screens/)  
+[Camera calibration with veejay](/category/howto/projector-camera-calibration-augmented-reality)   
+[Reloaded](/screenshots)  
 </div>  
 
 
@@ -90,7 +90,7 @@ While playing, you can record the resulting video directly to disk (video sampli
 * Preview rendering  
 * V42L loopback  
 * YUV4mpeg  
-* [TwinView / One BigDesktop](http://www.veejayhq.net/docs/veejay-environment-variables/)  
+* [TwinView / One BigDesktop](/category/documentation/veejay-environment-variables)  
 
 
 ### Interaction  
@@ -143,5 +143,4 @@ by changing the framerate dynamically.
 
 (8) JACK: A low latency audio server that can connect a number of different applications to an audio device,allowing them to share audio between themselves.  
 
-(9) [  
-Perspective Transform](http://www.veejayhq.net/2008/11/projectorcamera-calibration-augmented-reality/)
+(9) [Perspective Transform](/category/howto/projector-camera-calibration-augmented-reality)
