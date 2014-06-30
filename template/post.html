@@ -2,9 +2,8 @@
 
 {% block content %}
     <div class="blog-post">
-        <h2 class="blog-post-title">{{ post.title }}</h2>
-        <p class="blog-post-meta">{{ post.date|strftime('%B %d, %y') }}</p>
-
+        <h2 class="blog-post-title">{{ page.title }}</h2>
+        <p class="blog-post-meta">{{ page.date|strftime('%B %d, %Y') }}</p>
         {{ page.content|marked }}
-    </div><!-- /.blog-post -->
+    </div>
 {% endblock %}
