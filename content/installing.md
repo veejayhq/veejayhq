@@ -45,7 +45,7 @@ veejay-server $ make
 veejay-server $ sudo make install
 ```
 
-If you want to build for a generic or specific architecture, replace the above configure command with one of these:
+If you want to build for a generic or specific architecture, replace the above configure command with for example:
 
 ```
 # generic 
@@ -54,6 +54,8 @@ $ ./configure --with-arch-target=generic
 # specific cpu
 $ ./configure --wit-arch-target=core2
 ```
+
+The client and command line utility also accept the --with-arch-target configure parameter.
 
 3. Build the client
 
