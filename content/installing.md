@@ -45,7 +45,7 @@ veejay-server $ make
 veejay-server $ sudo make install
 ```
 
-If you want to build for a generic or specific architecture:
+If you want to build for a generic or specific architecture, replace the above configure command with one of these:
 
 ```
 # generic 
