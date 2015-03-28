@@ -5,8 +5,8 @@ type: page
 date: "Sun, 16 Nov 2008 22:27:51 +0000"
 author: niels
 ---
-<div class="c1"># Veejay version 1.5.22  
-December 30, 2012  
+<div class="c1"># Veejay version 1.5.47  
+Feburary  14, 2015  
 **Veejay, a visual instrument for GNU  
 **</div>  
 <div class="c1">  
@@ -98,7 +98,7 @@ While playing, you can record the resulting video directly to disk (video sampli
 * Programmable keyboard interface  
 * VIMS (tcp/ip)  
 * OSC (udp)  
-* PureData trough sendVIMS external  
+* PureData trough sendVIMS external 
 
 
 ### Viewing  
@@ -108,9 +108,8 @@ While playing, you can record the resulting video directly to disk (video sampli
 
 
 ### Additional  
-* Support for FreeFrame plugins  
 * Support for Frei0r plugins  
-
+* Support for Livido plugins
 
 What is  
 
