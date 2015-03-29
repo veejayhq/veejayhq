@@ -9,7 +9,7 @@ var generate = require('./lib/render'),
 
 var program = require('commander');
 
-program.option('-p, --port <port>', 'specify the port [3000]', Number, 3000);
+program.option('-p, --port <port>', 'specify the port [3000]', Number, process.env.PORT || 8080);
 
 function help() {
     console.log('Usage:\n');
