@@ -8,6 +8,7 @@
     "url": "https://github.com/veejayhq/veejayhq"
   },
   "scripts": {
+    "start": "./cmd.js serve public",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./cmd.js build content public",
     "publish": "./build-site.sh"
