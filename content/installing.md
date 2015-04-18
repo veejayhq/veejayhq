@@ -72,7 +72,7 @@ veejay-client $ sudo make install
 ```
 veejay-client $ cd ..
 veejay-current $ cd veejay-utils
-veejay-utils $ veejay-client $ sh autogen.sh
+veejay-utils $ sh autogen.sh
 veejay-utils $ ./configure && make
 veejay-utlis $ sudo make install
 ```
