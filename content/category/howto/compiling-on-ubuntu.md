@@ -8,6 +8,7 @@ author: matthijs
 
 ##*warning this documentation is a bit out of date*
 
+You could [access to some fresh veggie-meat](/installing) to build under mint 17.1 (rebecca).
 Please [contact](/contact) us if you need help.
 
 
