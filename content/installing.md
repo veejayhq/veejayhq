@@ -6,6 +6,11 @@ date: "Sat, 14 Apr 2012 10:01:24 +0000"
 author: niels
 ---
 
+## Pre-compiled packages
+
+Currently there is a all-in-one binary release for Ubuntu 12.04 LTS (64 bit).
+You can grab it here: [veejay-1.5.28-amd64](https://sourceforge.net/projects/veejay/files/veejay-1.5-bin/veejay-1.5.28-amd64.deb/download)
+
 ## Compile from source
 
 To get a copy of veejay's source anonymously:
@@ -93,13 +98,6 @@ Then, run the server with a video-file:
 $ veejay -v /path/to/mjpeg.avi
 ```
 
-
-
-
-## Pre-compiled packages
-
-Currently there is a all-in-one binary release for Ubuntu 12.04 LTS (64 bit).
-You can grab it here: [veejay-1.5.28-amd64](https://sourceforge.net/projects/veejay/files/veejay-1.5-bin/veejay-1.5.28-amd64.deb/download)
 
 ## Source archives
 
