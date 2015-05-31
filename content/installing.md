@@ -200,6 +200,6 @@ $ veejay -v /path/to/mjpeg.avi
 
 ## Source archives
 
-* [Veejay development (websvn, trac)](http://veejay.dyne.org)
+* [Veejay development (websvn, trac)](http://code.dyne.org/veejay)
 * [Veejay File Release archive](http://www.sourceforge.net/projects/veejay)
 
