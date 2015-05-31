@@ -62,6 +62,17 @@ wallet_address: "LS5Mn31DdVZZZtkMD7PCoVCvsbdEVGpgyZ"
 We encourage everyone to contribute back into the project, whether by investing time (development work, writing documentation, providing examples, etc) or by a monetary contribution.
 If you exploit veejay (or parts of veejay) commercially, please consider investing back into the project.
 
+## Programming / Debugging
+
+The veejay code is hosted on [dyne's platform](https://www.dyne.org/) : [http://code.dyne.org/veejay](http://code.dyne.org/veejay) and patrolled with git (an open source version control system).
+
+You can get a copy of the source code cloning the repository :
+
+    git clone git://code.dyne.org/veejay.git veejay-git
+
+* Minor changes. When you have completed a minor changes or fixed a bug, make a [patch diff](http://www.git-scm.com/docs/git-diff) and send it [to us](/contact/).
+* Major changes. If you plan to implement a major change and want this to be included in the master, please consider to [concact us](/contact/) and talk about your project.
+
 ## Hardware 
 
 If you are willing to send us a hardware doantion, please contact us with a description of the hardware you like to give. 
