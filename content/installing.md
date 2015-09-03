@@ -15,7 +15,7 @@ You can grab it here: [veejay-1.5.28-amd64](https://sourceforge.net/projects/vee
 
 To get a copy of veejay's source anonymously:
 
-    git clone git://code.dyne.org/veejay.git veejay-git
+    git clone https://github.com/c0ntrol/veejay.git
 
 To check the latest releases:
 

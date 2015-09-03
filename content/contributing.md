@@ -64,11 +64,13 @@ If you exploit veejay (or parts of veejay) commercially, please consider investi
 
 ## Programming / Debugging
 
-The veejay code is hosted on [dyne's platform](https://www.dyne.org/) : [http://code.dyne.org/veejay](http://code.dyne.org/veejay) and patrolled with git (an open source version control system).
+The veejay code used to be hosted on [dyne's platform](https://www.dyne.org/) : [http://code.dyne.org/veejay](http://code.dyne.org/veejay) and patrolled with git (an open source version control system), where you can found archive of the project.
+
+Since summer 2015 the source code moved to github.
 
 You can get a copy of the source code cloning the repository :
 
-    git clone git://code.dyne.org/veejay.git veejay-git
+    git clone https://github.com/c0ntrol/veejay.git
 
 * Minor changes. When you have completed a minor changes or fixed a bug, make a [patch diff](http://www.git-scm.com/docs/git-diff) and send it [to us](/contact/).
 * Major changes. If you plan to implement a major change and want this to be included in the master, please consider to [concact us](/contact/) and talk about your project.
