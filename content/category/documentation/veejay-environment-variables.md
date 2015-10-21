@@ -18,9 +18,9 @@ Currently undergoing review at [https://github.com/c0ntrol/veejay/issues/27]
 TwinView setup, Screen 0:1600x1024 Screen1: 1024x768  
 [![](/uploads/2009/01/ms.jpg)  
 
-`$ export VEEJAY_DESKTOP_GEOMETRY=2624x1024+0x0  
-$ export VEEJAY_VIDEO_SIZE=1024x768  
-$ export VEEJAY_VIDEO_POSITION+1600x0
-$ export VEEJAY_PERFORMANCE=quality  
-$ veejay -v -w1024 -h768 myvideo.avi  
+    $ export VEEJAY_DESKTOP_GEOMETRY=2624x1024+0x0  
+    $ export VEEJAY_VIDEO_SIZE=1024x768  
+    $ export VEEJAY_VIDEO_POSITION+1600x0
+    $ export VEEJAY_PERFORMANCE=quality  
+    $ veejay -v -w1024 -h768 myvideo.avi  
 `
