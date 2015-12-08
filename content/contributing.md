@@ -83,16 +83,4 @@ Second, we're video geeks, not design folks. Maybe you can spare us some of your
 and help out with the template for this website? let us know!
 
 
-## The "Veejay Shop"
-
-You can support this project by buying something from the
-[Veejay shop](http://231947.spreadshirt.net)
-
-[![](http://spreadshirt.net/image.php?type=image&amp;partner_id=896281&amp;product_id=5151558&amp;img_id=1&amp;size=big&amp;bgcolor_images=white)](#)
-
-For now, I would definately go with the mug :)
-
-To our contributors: **Thank You!**
-
-
 
