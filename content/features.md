@@ -6,11 +6,6 @@ date: "Sun, 16 Nov 2008 22:27:51 +0000"
 author: niels
 ---
 
-Veejay is a visual instrument and real-time video sampler.  
-It allows you to "play" the video like you would play a piano.  
-While playing, you can record the resulting video directly to disk (video sampling).
-
-
 ## FEATURE OVERVIEW  
 
 
