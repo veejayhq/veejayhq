@@ -3,7 +3,6 @@
 'use strict';
 
 var generate = require('./lib/render'),
-    importer = require('./lib/import'),
     connect = require('connect'),
     Path = require('path');
 
@@ -50,13 +49,6 @@ program
     .command('build <src> <dst>')
     .description('build site')
     .action(build);
-
-program
-    .command('import <src.xml> <dst>')
-    .description('import wordpress xml file')
-    .action(function(src, dst) {
-        importer(Path.resolve(src), Path.resolve(dst));
-    });
 
 program
     .command('*')

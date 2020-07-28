@@ -5,25 +5,6 @@ type: page
 date: "Sun, 16 Nov 2008 22:27:51 +0000"
 author: niels
 ---
-<div class="c1"># Veejay version 1.5.47  
-Feburary  14, 2015  
-**Veejay, a visual instrument for GNU  
-**</div>  
-<div class="c1">  
-<http://veejayhq.net>  
-<http://code.dyne.org/veejay/>  
-</div>  
-<div class="c1">**  
-Veejay is a visual instrument and real-time video sampler.  
-It allows you to "play" the video like you would play a piano.  
-While playing, you can record the resulting video directly to disk (video sampling).**</div>  
-
-
-<div class="c1">  
-[Camera calibration with veejay](/category/howto/projector-camera-calibration-augmented-reality)   
-[Reloaded](/screenshots)  
-</div>  
-
 
 ## FEATURE OVERVIEW  
 
@@ -37,27 +18,27 @@ While playing, you can record the resulting video directly to disk (video sampli
 * Loop based editing (5)  
 * Native YUV processing  
 * Crash recovery  
-* Support for multi core cpu  
+* Support for multi core cpu (parallel computations)
 
 
 ### Media  
 
-* Codecs: MJPEG,MPNG, DV, LossLess JPEG, MJPEG-b,YUV (raw)  
+* Codecs: MJPEG,MPNG, DV, LossLess JPEG, MJPEG-b,YUV, HUFFYUV, rawvideo  
 * Containers: AVI , Quicktime, rawDV  
 * Devices: USB webcams, DV1394, TV capture cards, etc (v4l2)  
 * Support for unlimited capture devices  
 * Support for Image files (PNG ,JPEG,TIFF,etc)  
-* Support for JPEG streaming webcams  
+* Support for JPEG streaming webcams
+* Support for shared resources (shared memory)
 
 
 ### Editing  
 
-* 137 built-in FX , many unique and original FX filters  
-* FX chain (20 slots, first 3 are rendered in mixing mode)  
+* 161 built-in FX , many unique and original FX filters  
+* FX chain with up to 20 FX slots
 * All FX parameters can be animated.  
-* Mix up to two layers per FX slot  
+* Mix up to two sources per FX slot  
 * Non destructive edit decision lists (cut/copy/paste/crop video)  
-* Simple text editor  
 * Sample editor  
 * Sequence editor  
 * Live disk recorder (sampling)  
@@ -86,16 +67,16 @@ While playing, you can record the resulting video directly to disk (video sampli
 * Audio trough Jack (low latency audio server) (8)  
 * SDL  
 * Headless  
-* Network streaming (unicast and multicast)  
-* Preview rendering  
-* V42L loopback  
-* YUV4mpeg  
-* [TwinView / One BigDesktop](/category/documentation/veejay-environment-variables)  
+* Network streaming (unicast)  
+* Life view
+* V4L2 Loopback  
+* YUV4MPEG  
+* [TwinView / One BigDesktop](/category/documentation/veejay-environment-variables) 
+* [Video Splitter](https://github.com/c0ntrol/veejay/blob/master/veejay-current/veejay-server/doc/video-wall.md)
 
 
 ### Interaction  
 
-* Programmable keyboard interface  
 * VIMS (tcp/ip)  
 * OSC (udp)  
 * PureData trough sendVIMS external 
@@ -104,7 +85,7 @@ While playing, you can record the resulting video directly to disk (video sampli
 ### Viewing  
 
 * Full screen or windowed mode  
-* Camera/Projector calibration (9)  
+* [Camera/Projector calibration](http://veejayhq.net/category/howto/projector-camera-calibration-augmented-reality) (9)  
 
 
 ### Additional  

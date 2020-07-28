@@ -2,6 +2,10 @@
 
 This is the generator for http://veejayhq.net
 
+## Contributing
+
+Contributions are welcome! Please create a pull request and contact the mailing list with a link to your pull - there are multiple admins who can merge it for you.
+
 ## Installation
 
 This site is generated using `node.js`, but no actual knowledge is required:

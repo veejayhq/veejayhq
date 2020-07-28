@@ -5,6 +5,13 @@ type: page
 date: "Sat, 03 Mar 2007 10:57:25 +0000"
 author: veejayhq
 ---
+
+## Veejay's source code repository
+
+Veejay's source code repository is located at https://github.com/c0ntrol/veejay
+
+The 1.5.59 version will be released once https://github.com/c0ntrol/veejay/issues/67 is resolved (no ETA)
+
 ## Veejay is a visual instrument  
 
 *Veejay is a visual instrument and realtime video sampler.*

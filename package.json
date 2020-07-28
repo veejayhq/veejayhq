@@ -34,7 +34,6 @@
     "swig-marked": "0.0.1",
     "upndown": "0.0.8",
     "walk": "^2.3.3",
-    "xml2json": "^0.4.0",
     "yaml-front-matter": "^3.0.1"
   },
   "devDependencies": {

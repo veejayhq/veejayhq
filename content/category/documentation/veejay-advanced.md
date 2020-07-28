@@ -8,9 +8,9 @@ author: niels
 
 ###Plugins
 
-Veejay can load both FreeFrame and Frei0r plugins. By default, veejay loads no plugins.
-You must create a file and enter the location of the plugins you want to load.
-Bad plugins can cause veejay to crash, test all your plugins before using them live.
+Veejay can load both LiViDo and Frei0r plugins.On 32-bit systems, there is also support for FreeFrame.
+By default,veejay looks in a few common locations to find your plugins.
+Also, you can configure additions paths to look for plugins:
 
     $ mkdir ~/.veejay
     $ vi ~/.veejay/plugins
